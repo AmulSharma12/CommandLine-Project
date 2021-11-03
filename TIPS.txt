@@ -5,3 +5,16 @@ ORGANIZE COMMAND
 // 2.)create -> organized files directory
 // 3.) identify categories of all the files present in input directory
 // 4.) copy/cut all the files  inside any categories of organized directory
+
+
+
+// for putting something in the console
+//search sheban syntax for that particular language
+//1.)then you have to insert into main.js make sure folder should be small letter
+ //2.) run the command npm init -y it will create package.json
+ //3.) then in package.json you have to add  bin
+SYNTAX :
+
+"bin":{
+    "command name":"fileName"
+}
