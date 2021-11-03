@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        /* element selector */
+        h1{
+            color:aqua;
+            background-color: black;
+        }
+
+        /* id selector */
+        #op{
+
+            color:cornsilk;
+            background-color: darkolivegreen;
+        }
+
+        /* class selector */
+        .op{
+            color: darkolivegreen;
+            background-color: darkslategray;
+        }
+        .op.hello{
+            color: rgb(21, 90, 240);
+            background-color: rgb(40, 38, 41);
+        }
+
+
+        /* group selectors */
+        h2,p,p.o{
+            color: khaki;
+            background-image: -moz-radial-gradient();
+            background-color: rgb(31, 89, 146);
+        }
+    </style>
+</head>
+<body>
+    <!-- Element selectors -->
+    <h1>This is  a element selectors</h1>
+    
+    <!-- id selectors -->
+        <h1 id="op">This is  a Id selectors</h1>
+        <p id="op">This is  a Id selectors</p>
+
+     <!-- class selectors -->
+    <h1 class="op">This is  a Class selectors</h1>
+    <p class="op hello">This is  a Class selectors</p>
+
+    <!-- Group selectors -->
+    <h2>This is  a Group selectors</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, tempore.</p>
+    <p class="c">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
