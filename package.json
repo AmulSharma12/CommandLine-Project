@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "run": "main.js"
+    "run": "main.js",
+    "open":"main.js"
   }
 }

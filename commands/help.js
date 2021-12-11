@@ -4,9 +4,12 @@
 function help()
 {
     console.log(`List Of All Commands
-                node main.js tree "directoryPath"   
-                node main.js organize "directoryPath"
-                node main.js help
+USAGE : run [help] [tree] [organize]
+
+These are common commands used :-
+        help        ->  Shows all the Commands
+        tree        ->  Shows Hierarchy Of Files/Folders
+        organize    ->  Create Organized Folder and Categorised
     `);
 }
 module.exports={
