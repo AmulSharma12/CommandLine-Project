@@ -16,7 +16,7 @@ function organising(dirPath)
         if(doesExist)
         {
             // 2.)create -> organized files Directory
-                destPath = path.join(dirPath,"organized_files");
+             destPath = path.join(dirPath,"organized_files");
             if(fs.existsSync(destPath) == false)
                 fs.mkdirSync(destPath);
         }else

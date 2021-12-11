@@ -5,6 +5,7 @@ let path = require("path");
 let helpObj = require("./commands/help");
 let organizeObj = require("./commands/organize");
 let treeObj = require("./commands/tree");
+let startObj = require("./commands/start");
 // console.log(inArr); 
 
 //The command we implement
@@ -25,9 +26,16 @@ let types={
     apps:["exe","dmg","pkg","deb","msi"]
 };
 
+let defaultStart = true;
+if(command == "start")
+{ 
+    defaultStart = startObj.startKey(inArr);
+   
+}
+
 switch(command)
 {
-    case "tree":
+    case "tree": 
         treeObj.treeKey(inArr[1]);
         break;
     case "organize":
@@ -36,8 +44,17 @@ switch(command)
     case "help":
         helpObj.helpKey();
         break;
+
     default:
-        console.log("🤣🤣 Command Dal  Dum Ha Toh ");
+        if(command != "start" && defaultStart == false)
+        {
+            console.log("🤣🤣 Command Dal  Dum Ha Toh ");
+        }
+        else{
+            break;
+        } 
+        
+        
 }
 
 //npm rebuild node-sass
